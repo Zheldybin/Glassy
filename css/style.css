@@ -237,7 +237,7 @@ a {
 
 .pattern {
     height: 306px;
-    background-image: url(/img/pattern.png);
+    background-image: url(../img/pattern.png);
     color: black;
     margin-top: 40px;
 }
@@ -280,7 +280,7 @@ a {
 .blog {
     height: 220px;
     width: 100%;
-    background-image: url(/img/strawberry.jpg);
+    background-image: url(../img/strawberry.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -321,7 +321,7 @@ a {
     position: relative;
     height: 220px;
     width: 100%;
-    background-image: url(/img/mail.jpg);
+    background-image: url(../img/mail.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
