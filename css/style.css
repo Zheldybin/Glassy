@@ -70,6 +70,42 @@ header nav ul {
     margin-right: 0;
 }
 
+.header-main-list1 {
+    position: relative;
+}
+
+.header-main-list1:hover .main-list__item {
+    display: block;
+}
+
+.main-list__item {
+    display: none;
+    position: absolute;
+    width: 143px;
+    background: #FFFFFF;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+    top: 40px;
+    left: 0px;
+    z-index: 99999999;
+}
+
+.main-list__item p {
+    padding: 0 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.main-list__item hr {
+    border: 1px solid rgba(50, 50, 50, 0.2);
+    width: 128px;
+}
+
+.main-list__item:hover {
+    display: block;
+}
+
 a {
     color: inherit;
 }
@@ -211,6 +247,18 @@ a {
     /* padding-bottom: 20px; */
 }
 
+.hit-img:before {
+    content: "";
+    display: block;
+    background-image: url(../img/hit.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 61px;
+    height: 61px;
+    position: absolute;
+}
+
 .hit-list:hover .hit-list__wrapper {
     visibility: visible;
 }
@@ -218,7 +266,7 @@ a {
 .hit-list__wrapper {
     background-color:rgb(255 255 255 / 20%);
     position: absolute;
-    height: 500px;
+    height: 402px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -234,8 +282,8 @@ a {
     font-weight: 700;
     font-size: 45px;
     line-height: 45px;
-    /* position: absolute; */
-    bottom: 20px;
+    position: absolute;
+    bottom: 90px;
 }
 
 .hit-praic span {
@@ -244,26 +292,20 @@ a {
     line-height: 35px;
 }
 
-.hit-description {
-    /* display: flex; */
-    /* justify-content: space-between; */
-    /* align-items: center; */
-}
-
 .hit-list__btn {
     cursor: pointer;
     padding: 12px 16px;
 }
 
 .hit-description p {
-    /* text-align: center; */
-    /* width: 267px; */
+    text-align: center;
     font-size: 16px;
     line-height: 22px;
 }
 
 .hit-list__description {
     padding: 0 13px;
+    text-align: center;
 }
 
 .pattern {
@@ -358,7 +400,6 @@ a {
 }
 
 .mailing-container {
-    position: relative;
     width: 100%;
     background-image: url(../img/mail.jpg);
     background-repeat: no-repeat;
@@ -371,9 +412,6 @@ a {
 }
 
 .form {
-    position: absolute;
-    top: 0px;
-    left: 0px;
     color: #5A5A5A;
     padding: 30px 20px;
 }
