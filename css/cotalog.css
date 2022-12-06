@@ -303,6 +303,11 @@ header nav ul {
     margin-right: 8px;
 }
 
+.breadcrumb-item + .breadcrumb-item::after {
+    content: "»";
+    margin-left: 8px;
+}
+
 .h1 {
     margin: 0;
     font-weight: 700;
@@ -313,53 +318,126 @@ header nav ul {
 /* фильтр */
 
 .filter {
-    width: 870px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 10px;
+    width: 80%;
     font-weight: 500;
     font-size: 16px;
     line-height: 18px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-}
-
-.grid-item3 {
-    grid-column: 3 / 5;
-    width: 100%;
-    
-}
-
-.grid-item4 {
-    grid-column: 1 / 5;
-    width: 100%;
 }
 
 .filter-fat form {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    padding: 10px 14px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .filter-add form {
-    display: grid;
-    grid-template-columns: repeat(6, max-content);
+    padding: 10px 14px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.filter-add div {
-    padding: 10px;
+.filter-add input {
+    margin-right: 7px;
+}
+
+.button-filter {
+    position: relative;
+    top: 50px;
+    left: 100px;
+}
+
+.first {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-gap: 20px;
+}
+
+.second {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 20px;
 }
 
 select {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.438);
     border-radius: 20px;
-    padding: 13px 26px 13px 10px;
+    padding: 13px 0px 13px 13px;
     color: white;
 }
 
-.filter-praic input {
+select:hover {
+    color: #323232;
+}
+
+.filter-hit * option {
+    background: #FFFFFF;
+    
+}
+
+.button-filter {
+    padding: 10px 29px;
     background: rgba(255, 255, 255, 0.2);
+    border: 2px solid #FFFFFF;
     border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.button-filter:hover {
+    background: #FFFFFF;
+    border-radius: 20px;
+    color: #323232;
+}
+
+.button-filter:active {
+    box-shadow: inset 0px 2px 1px #696969;
+    color: #323232;
+}
+
+/* Радио кнопки */
+
+.radio {
+
+}
+
+/* .checkbox-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+    .checkbox-check {
+    width: 15px;
+    height: 15px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 50%;
+} */
+
+/* Checked */
+
+.radio-input:checked + .radio-check {
+
+}
+
+/* Focused */
+
+.radio-input:focus + .radio-check {
+
+}
+
+/* disables */
+
+.radio-input:disabled + .radio-check {
+
+}
+
+/* checked disavled */
+
+.radio-input:checked:disabled + .radio-check {
+
 }
 
 /* каталог */
