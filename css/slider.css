@@ -61,7 +61,8 @@
     border: 2px solid white;
     border-radius: 50%;
     width: 20px;
-    height: 20px;  
+    height: 20px;
+    cursor: pointer;  
 }
 
 .slider-btn__item:hover {
